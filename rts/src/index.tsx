@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import EventComponent from './events/EventComponent'
 
 const App = ()=>{
   return <div>
-    <h1>hi there!</h1>
+    <EventComponent/>
     </div>
 }
 
