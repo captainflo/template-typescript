@@ -17,6 +17,7 @@ const App = () => {
       bundle: true,
       write: false,
       plugins: [unpkgPathPlugin()],
+      define: { 'process.env.NODE_ENV': '"production"', global: 'window' },
     });
     setCode(result.outputFiles[0].text);
     // console.log(result);
